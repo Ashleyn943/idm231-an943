@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Gluten';
+    src: url(font/Gluten-VariableFont_slnt,wght.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'IndieFlower';
+    src: url(font/IndieFlower-Regular.ttf) format('truetype');
+}
+
+:root{
+    --pastel-red: #FFBEBE;
+    --pastel-orange: #FFDCA5;
+    --pastel-yellow: #FFFEA8;
+    --pastel-green: #B2E89F;
+    --pastel-blue: #A6FFF6;
+    --pastel-indigo: #9B7CF1;
+    --pastel-purple: #EEA3FD;
+
+    --pink-100: #FE82DB;
+    --pink-500: #B02388;
+    --white: #FFFFFF;
+}
+
+html {
+    background-image: linear-gradient(var(--pastel-red), var(--pastel-orange), var(--pastel-yellow), var(--pastel-green), var(--pastel-blue), var(--pastel-indigo), var(--pastel-purple));
+    width: 1200px;
+    height:  800px;
+    margin: auto;
+}
+
+img{
+    height: auto;
+    width: 200px;
+}
+    
+div{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-family: 'Gluten', Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: var(--pink-100);
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+p{
+    font-family: 'IndieFlower', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--pink-500);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: rgba(255, 255, 255, .5);
+    border: 1rem solid var(--white);
+    border-radius:  1.875rem;
+}
+
+#title{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.inputs{
+    place-self: center center;
+}
+
+#column1 {
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+#column2 {
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+#column3 {
+    align-items: center;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+#column4 {
+    align-items: center;
+    grid-column: 5/6;
+    grid-row: 1/3;
+}
+
+#item1{
+    align-items: center;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#item2{
+    align-items: center;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#item3{
+    align-items: center;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
