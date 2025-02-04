@@ -41,6 +41,7 @@ div{
 
 h1{
     font-family: 'Gluten', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
     text-align: center;
     color: var(--pink-100);
     text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
@@ -112,3 +113,24 @@ p{
     grid-column: 3/4;
     grid-row: 3/4;
 }
+
+.button{
+    align-items: center;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+button, #birthday{
+    border: .5rem solid var(--white);
+    border-radius:  1.875rem;
+    background-color: var(--pink-100);
+    color: var(--pink-500);
+    font-family: 'Gluten', Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    margin: 1rem;
+    padding: .5rem;
+}
+    #birthday{
+        margin: auto;
+        padding: auto;
+    }
