@@ -31,12 +31,13 @@ html {
 
 img{
     height: auto;
-    width: 200px;
+    width: 175px;
 }
     
 div{
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 h1{
@@ -114,13 +115,23 @@ p{
     grid-row: 3/4;
 }
 
-.button{
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button:active {
+    transform: translate(2px, 2px);
+}
+
+.button, .centered{
     align-items: center;
     grid-column: 3/4;
     grid-row: 2/3;
 }
 
-button, #birthday{
+.button, #birthday{
     border: .5rem solid var(--white);
     border-radius:  1.875rem;
     background-color: var(--pink-100);
@@ -134,3 +145,8 @@ button, #birthday{
         margin: auto;
         padding: auto;
     }
+
+#footer {
+    bottom: .0625rem;
+    margin: auto;
+}
