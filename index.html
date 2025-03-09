@@ -9,14 +9,23 @@
 </head>
 <body>
     <h1 class="inputs">Which Sanrio character are you?</h1>
+<div id="WholeScreen">
+    <div class="" id="DisplayArea">
+        <h1 id="ZodName">ZodiacName</h1>
+        <img id="ZodPic" src="media/Hangyodon.png" alt="Anthromorphic Fish">
+        <h2 id="ZodDates">Start - End</h2>
+        <p id="ZodDes">Hello! Hi! Here's your personality traits. Buh bye!</p>
+        <button class="button" id="closeIt">Close</button>
+    </div>
+
     <div class="container" id="Unblurred">
-        <header id="title">
+        <div id="title">
             <form class="inputs">
                 <input type="date" id="birthday" name="birthday">
-                <input type="submit" class="button">
             </form>
-            <p>Simply insert your birthday and click submit to see what Sanrio character you are!</p>
-        </header>
+            <button class="button" id="SubmitBirth">Submit</button>
+            <p>Simply insert your birthday and click "Submit" to see what Sanrio character you are!</p>
+        </div>
         <div id="column1">
             <button id="Cinnamoroll" class="zodiacs">
                 <img src="Media/Cinnamoroll.png" alt="Image of Sanrio character Cinnamoroll">
@@ -65,7 +74,8 @@
             <button class="button" id="openHelp">Need Help?</button>
         </div>
     </div>
-    <div class="container, hideMe" id="help">
+
+    <div class="hideMe" id="help">
         <h2>How it work!</h2>
         <ol class="help">
             <li>Enter your birthday in the line above! You can type it or click the calendar to search for it manually.</li>
@@ -74,14 +84,56 @@
         </ol>
         <button class="button" id="closeHelp">Close</button>
     </div>
-    <div class="ZodContainer, hideMe" id="DisplayArea">
-        <h1 id="ZodName">ZodiacName</h1>
-        <img id="ZodPic" src="media/Hangyodon.png" alt="Anthromorphic Fish">
-        <h2 id="ZodDates">Start - End</h2>
-        <p id="ZodDes">Hello! Hi! Here's your personality traits. Buh bye!</p>
-        <button class="button" id="closeIt">Close</button>
+    
+    <div class="hideMe" id="alert">
+        <h2>Please enter a valid date.</h2>
+        <button class="button" id="closeAlert">Close</button>
     </div>
-    <p id="footer">&copy; 2024 SANRIO CO., LTD.  All Rights Reserved.</p>
+
+    
+</div>
+
+<div id="footer"> 
+    <p>Content curtosy of &copy; 2024 SANRIO CO., LTD.  All Rights Reserved.</p>
+</div>
     <script src="postload.js"></script>
+
+    <audio id="BadAudio" src="Media/Audio/Badz-maru_Intro.mp3">
+        Your browser does not support audio element for HTML5. 
+    </audio>
+    <audio id="ChocoAudio" src="Media/Audio/Chococat_Intro.mp3">
+        Your browser does not support audio element for HTML5. 
+    </audio>
+    <audio id="CinnaAudio" src="Media/Audio/Cinnamoroll_Intro.mp3">
+        Your browser does not support audio element for HTML5. 
+    </audio>
+    <audio id="HangAudio" src="Media/Audio/Hangyodon_Intro.mp3">
+        Your browser does not support audio element for HTML5. 
+    </audio>
+    <audio id="HelloAudio" src="Media/Audio/Hello_Kitty_Intro.mp3">
+        Your browser does not support audio element for HTML5. 
+    </audio>
+    <audio id="KeroAudio" src="Media/Audio/Keroppi_Intro.mp3">
+        Your browser does not support audio element for HTML5. 
+    </audio>
+    <audio id="KuroAudio" src="Media/Audio/Kuromi_Intro.mp3">
+        Your browser does not support audio element for HTML5. 
+    </audio>
+    <audio id="TwinAudio" src="Media/Audio/Little_Twin_Stars_Intro.mp3">
+        Your browser does not support audio element for HTML5. 
+    </audio>
+    <audio id="MeloAudio" src="Media/Audio/My_Melody_Intro.mp3">
+        Your browser does not support audio element for HTML5. 
+    </audio>
+    <audio id="PochAudio" src="Media/Audio/Pocchaco_Intro.mp3">
+        Your browser does not support audio element for HTML5. 
+    </audio>
+    <audio id="PomAudio" src="Media/Audio/Pompompurin_Intro.mp3">
+        Your browser does not support audio element for HTML5. 
+    </audio>
+    <audio id="SamAudio" src="Media/Audio/Tuxedo_Sam_Intro.mp3">
+        Your browser does not support audio element for HTML5. 
+    </audio>
+
 </body>
 </html>
