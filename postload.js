@@ -100,7 +100,7 @@ function displayOInfo(whichOne) {
         case 'Keroppi':
             ZodPicObj.src = 'Media/Keroppi.png';
             ZodDatesObj.innerHTML = 'July 23 - August 22';
-            ZodDesObj.innerHTML = 'YAn extrovert through and through. Anything to be around people, you love to do it. Especially if it involves games. You love playing all kinds of games with your friends. From board games to ball games to even video games at times, you love games. You get so excited about games that you can become careless. For you, it/’s not about winning the game but having fun. It might feel bad to lose but you don/’t let it get to you and bounce back immediately.';
+            ZodDesObj.innerHTML = 'An extrovert through and through. Anything to be around people, you love to do it. Especially if it involves games. You love playing all kinds of games with your friends. From board games to ball games to even video games at times, you love games. You get so excited about games that you can become careless. For you, it\’s not about winning the game but having fun. It might feel bad to lose but you don\’t let it get to you and bounce back immediately.';
             DisplayZod.classList.remove('hideMe');
             BackgroundDisplay.classList.add('ZodChara');
             playAudio('KeroAudio');
