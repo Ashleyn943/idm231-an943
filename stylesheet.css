@@ -19,6 +19,7 @@
 
     --pink-100: #FE82DB;
     --pink-500: #B02388;
+    --pink-700: #350D29;
     --white: #FFFFFF;
 }
 
@@ -59,6 +60,12 @@ h2{
     text-align: center;
     color: var(--pink-100);
     text-shadow: 2px 0 var(--white), -2px 0 var(--white), 0 2px var(--white), 0 -2px var(--white), 1px 1px var(--white), -1px -1px var(--white), 1px -1px var(--white), -1px 1px var(--white);
+}
+
+h3{
+    margin: .25rem 0 0;
+    font-weight: 500;
+    font-size: 1.25rem;
 }
 
 p{
@@ -209,6 +216,7 @@ button{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    text-align: center;
 }
 
 button:active {
@@ -239,6 +247,9 @@ button:active {
 #footer {
     margin: 0px auto;
 }
+    #footer p{
+        color: var(--pink-700);
+    }
 
 #WholeScreen{
     display: flex;
